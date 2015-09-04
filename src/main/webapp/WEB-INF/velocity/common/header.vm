@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/static/css/header.css">
+<header class="clearfix">
+    <div class="navbar">
+
+        <div class="navbar-logo">
+            <h1>
+                This is the header
+            </h1>
+        </div>
+
+        <div class="navbar-item-left">
+            1
+        </div>
+        <div class="navbar-item-left">
+            2
+        </div>
+        <div class="navbar-item-left">
+            3
+        </div>
+    </div>
+
+</header>

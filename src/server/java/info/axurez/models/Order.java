@@ -14,6 +14,10 @@ public class Order {
     @ManyToOne
     private Account account;
 
+    @ManyToOne
+    @XmlElement
+    public Firm firm;
+
     @Id
     @GeneratedValue
     @XmlElement

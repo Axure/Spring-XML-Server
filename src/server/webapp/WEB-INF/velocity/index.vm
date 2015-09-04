@@ -1,0 +1,4 @@
+Send me
+#set($foo       = ["$10 and ","a pie"])
+#foreach           ($a in $foo )$a
+#end please.

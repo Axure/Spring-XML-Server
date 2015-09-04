@@ -15,7 +15,7 @@ public class AccountController {
     @ResponseStatus(HttpStatus.OK)
     public @ResponseBody
     Account newStudent() {
-        Account newAccount = new Account("Name", "Password");
+        Account newAccount = new Account("Name", "Password", "name@host.com");
         return newAccount;
     }
 

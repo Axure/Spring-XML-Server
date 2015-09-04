@@ -15,6 +15,9 @@ public class Account {
     @OneToMany(mappedBy = "account")
     private Set<Order> orders = new HashSet<>();
 
+    @OneToMany(mappedBy = "account")
+    private Set<Firm> firms = new HashSet<>();
+
     @Id
     @GeneratedValue
     @XmlElement
@@ -22,6 +25,10 @@ public class Account {
 
     public Set<Order> getOrders() {
         return orders;
+    }
+
+    public Set<Firm> getFirms() {
+        return firms;
     }
 
     public long getId() {
@@ -34,9 +41,13 @@ public class Account {
     @XmlElement
     public String username;
 
-    public Account(String name, String password) {
+    @XmlElement
+    public String email;
+
+    public Account(String name, String password, String email) {
         this.username = name;
         this.password = password;
+        this.email = email;
     }
 
     Account() {

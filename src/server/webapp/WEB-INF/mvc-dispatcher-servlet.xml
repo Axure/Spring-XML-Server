@@ -45,6 +45,20 @@
         <property name="ignoreAcceptHeader" value="true"/>
     </bean>
 
+    <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+        <property name="resourceLoaderPath">
+            <value>/WEB-INF/velocity/</value>
+        </property>
+    </bean>
+
+    <bean id="viewResolver"
+                class="org.springframework.web.servlet.view.velocity.VelocityLayoutViewResolver">
+        <property name="cache" value="true" />
+        <property name="prefix" value="" />
+        <property name="layoutUrl" value="layout.vm"></property>
+        <property name="suffix" value=".vm" />
+    </bean>
+
     <mvc:annotation-driven/>
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/pages/"/>

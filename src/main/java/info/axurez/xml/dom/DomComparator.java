@@ -2,6 +2,7 @@ package info.axurez.xml.dom;
 
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.*;
 
 /**
  * Created by zhenghu on 15 年 September. 5..
@@ -14,6 +15,7 @@ public class DomComparator {
 //        if (firstDom.getAttributeNode())
         NamedNodeMap firstNodeMap = firstDom.getAttributes();
         NamedNodeMap secondNodeMap = secondDom.getAttributes();
+
 
 
         return true;

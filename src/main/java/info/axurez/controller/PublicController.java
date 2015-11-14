@@ -1,4 +1,4 @@
-package info.axurez.controllers;
+package info.axurez.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

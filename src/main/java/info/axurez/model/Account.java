@@ -1,4 +1,4 @@
-package info.axurez.models;
+package info.axurez.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
